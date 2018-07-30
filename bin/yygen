@@ -32,7 +32,10 @@ function yygen(cfg) {
     pOut = output ? path.join(output) : path.join(cwd);
   }
 
-  fse.copy(pIn, pOut);
+  fse.copy(pIn, pOut, {
+    overwrite: true,
+    recursive: true
+  });
 };
 
 yygen(argv);

@@ -1,0 +1,41 @@
+{
+  "name": "",
+  "version": "1.0.0-beta.0",
+  "description": "",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run tsc:build && npm run optimize",
+    "tsc:build": "rm -fr dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+    "optimize": "npm run babel:cjs & npm run babel:mjs",
+    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
+    "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+    "start": "jest -o --watch",
+    "publish2npm": "npm run build && cp {package.json,README.md,.npmignore} dist && npm publish dist",
+    "prepush": "npm run lint",
+    "test": "jest --config jest.json --coverage",
+    "codecov": "codecov",
+    "lint": "tslint 'src/**/*.ts' && npm test"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12",
+    "tslib": "^1.9.3"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "codecov": "^3.0.4",
+    "jest": "^23.4.2",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^2.9.2"
+  }
+}

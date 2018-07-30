@@ -24,11 +24,15 @@ function yygen(cfg) {
   var cwd = process.cwd();
 
   var pIn = path.join(__dirname, '..', 'templates', type);
-  var pOut = output ? path.join(output, name) : path.join(cwd, name);
+  var pOut;
 
-  fse.copy(pIn, pOut).then(() => {
+  if (name) {
+    pOut = output ? path.join(output, name) : path.join(cwd, name);
+  } else {
+    pOut = output ? path.join(output) : path.join(cwd);
+  }
 
-  });
+  fse.copy(pIn, pOut);
 };
 
 yygen(argv);

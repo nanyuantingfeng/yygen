@@ -11,7 +11,10 @@ function rq(typeName) {
 
 module.exports = async function(config) {
   if (typeof config.types === 'string') {
-    config.types = config.types.split(',')
+    config.types = config.types
+      .split(/[,\s]/)
+      .map(n => n.trim())
+      .filter(n => !!n)
   }
 
   if (config.types.indexOf('common') === -1) {

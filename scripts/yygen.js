@@ -12,7 +12,10 @@ module.exports = async function(config) {
   await fse.mkdirp(output)
 
   files.forEach(file => {
-    fse.copyFileSync(file, output + '/' + path.basename(file))
+    let fileName = path.basename(file)
+    const extName = path.extname(file)
+    if (extName === '.raw') fileName = fileName.slice(0, -4)
+    fse.copyFileSync(file, path.join(output, fileName))
   })
 
   const fileNames = Object.keys(filesObject)

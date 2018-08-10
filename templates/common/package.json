@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-beta.0",
+  "description": "this is an yygen template paoject!!",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run tsc:build && npm run optimize",
+    "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+    "optimize": "npm run babel:cjs & npm run babel:mjs",
+    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+    "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+    "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+  }
+}

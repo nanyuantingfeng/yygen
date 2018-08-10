@@ -14,11 +14,14 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
+    "koa-compose": "^4.1.0",
+    "merge-deep": "^3.0.2",
     "yargs": "^12.0.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
-    "@types/yargs": "^11.1.1"
+    "@types/yargs": "^11.1.1",
+    "jest": "^23.4.2"
   },
   "main": "index.js",
   "repository": {
@@ -29,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/nanyuantingfeng/yygen/issues"
   },
-  "homepage": "https://github.com/nanyuantingfeng/yygen#readme"
+  "homepage": "https://github.com/nanyuantingfeng/yygen#readme",
+  "jest": {
+    "moduleFileExtensions": ["js","jsx", "ts", "tsx"],
+    "testMatch": [
+      "<rootDir>/**/__tests__/**/*.test.{ts,tsx,js,jsx}"
+    ],
+    "testEnvironment": "node"
+  }
 }

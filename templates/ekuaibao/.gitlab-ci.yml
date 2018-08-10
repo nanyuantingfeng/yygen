@@ -1,15 +1,15 @@
 stages:
-- build
-- deploy
+  - build
+  - deploy
 
 build:
   stage: build
   image: docker.ekuaibao.com/ci-nodejs:8
   script:
-  - npm --registry http://repo.ekuaibao.com/repository/npm-group/ install
-  - npm run build
-  - npm run publish2npm
+    - npm --registry http://repo.ekuaibao.com/repository/npm-group/ install
+    - npm run build
+    - npm run publish2npm
   only:
-  - /^v?\d+(\.\d+)+[\.\-_\w]*/
+    - /^v?\d+(\.\d+)+[\.\-_\w]*/
   tags:
-  - docker
+    - docker

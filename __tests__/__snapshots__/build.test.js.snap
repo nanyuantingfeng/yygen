@@ -1,93 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`build .each({"types":["ekuaibao","lint","jest"],"name":"demo-demo-3","output":"./demo"}) show be types: ekuaibao,lint,jest 1`] = `
-Object {
-  "config": Object {
-    "name": "demo-demo-3",
-    "output": "./demo",
-    "types": Array [
-      "common",
-      "ekuaibao",
-      "lint",
-      "jest",
-    ],
-  },
-  "files": Array [
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
-  ],
-  "filesObject": Object {
-    "package.json": Object {
-      "description": "this is an yygen template paoject!!",
-      "devDependencies": Object {
-        "@types/jest": "^23.3.1",
-        "babel-cli": "^6.26.0",
-        "babel-jest": "^23.4.2",
-        "babel-plugin-add-module-exports": "^0.2.1",
-        "babel-plugin-lodash": "^3.3.4",
-        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-        "codecov": "^3.0.4",
-        "jest": "^23.4.2",
-        "ts-jest": "^23.0.1",
-        "tslint": "^5.11.0",
-        "tslint-config-prettier": "^1.14.0",
-      },
-      "jest": Object {
-        "coveragePathIgnorePatterns": Array [
-          "/node_modules/",
-          "/__tests__/",
-          "/dist/",
-        ],
-        "moduleFileExtensions": Array [
-          "js",
-          "jsx",
-          "ts",
-          "tsx",
-        ],
-        "testEnvironment": "node",
-        "testMatch": Array [
-          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
-        ],
-        "testPathIgnorePatterns": Array [
-          "/node_modules/",
-          "/fixtures/",
-        ],
-        "transform": Object {
-          "^.+\\\\.jsx?$": "babel-jest",
-          "^.+\\\\.tsx?$": "ts-jest",
-        },
-      },
-      "license": "MIT",
-      "main": "./lib/index.js",
-      "module": "./esm/index.js",
-      "name": "demo-demo-3",
-      "publishConfig": Object {
-        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
-      },
-      "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
-        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
-        "build": "npm run tsc:build && npm run optimize",
-        "codecov": "codecov",
-        "optimize": "npm run babel:cjs & npm run babel:mjs",
-        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
-        "start": "jest -o --watch",
-        "test": "jest --coverage",
-        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
-      },
-      "sideEffects": false,
-      "types": "./esm/index.d.ts",
-      "version": "1.0.0-beta.0",
-    },
-  },
-  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo/demo-demo-3",
-}
-`;
-
 exports[`build .each({"types":["ekuaibao","lint","jest"],"name":"demo-demo-4","output":"./demo"}) show be types: ekuaibao,lint,jest 1`] = `
 Object {
   "config": Object {
@@ -173,94 +85,6 @@ Object {
     },
   },
   "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo/demo-demo-4",
-}
-`;
-
-exports[`build .each({"types":["ekuaibao","lint","jest"],"name":"demo-demo-4","output":"./demox"}) show be types: ekuaibao,lint,jest 1`] = `
-Object {
-  "config": Object {
-    "name": "demo-demo-4",
-    "output": "./demox",
-    "types": Array [
-      "common",
-      "ekuaibao",
-      "lint",
-      "jest",
-    ],
-  },
-  "files": Array [
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
-    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
-  ],
-  "filesObject": Object {
-    "package.json": Object {
-      "description": "this is an yygen template paoject!!",
-      "devDependencies": Object {
-        "@types/jest": "^23.3.1",
-        "babel-cli": "^6.26.0",
-        "babel-jest": "^23.4.2",
-        "babel-plugin-add-module-exports": "^0.2.1",
-        "babel-plugin-lodash": "^3.3.4",
-        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-        "codecov": "^3.0.4",
-        "jest": "^23.4.2",
-        "ts-jest": "^23.0.1",
-        "tslint": "^5.11.0",
-        "tslint-config-prettier": "^1.14.0",
-      },
-      "jest": Object {
-        "coveragePathIgnorePatterns": Array [
-          "/node_modules/",
-          "/__tests__/",
-          "/dist/",
-        ],
-        "moduleFileExtensions": Array [
-          "js",
-          "jsx",
-          "ts",
-          "tsx",
-        ],
-        "testEnvironment": "node",
-        "testMatch": Array [
-          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
-        ],
-        "testPathIgnorePatterns": Array [
-          "/node_modules/",
-          "/fixtures/",
-        ],
-        "transform": Object {
-          "^.+\\\\.jsx?$": "babel-jest",
-          "^.+\\\\.tsx?$": "ts-jest",
-        },
-      },
-      "license": "MIT",
-      "main": "./lib/index.js",
-      "module": "./esm/index.js",
-      "name": "demo-demo-4",
-      "publishConfig": Object {
-        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
-      },
-      "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
-        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
-        "build": "npm run tsc:build && npm run optimize",
-        "codecov": "codecov",
-        "optimize": "npm run babel:cjs & npm run babel:mjs",
-        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
-        "start": "jest -o --watch",
-        "test": "jest --coverage",
-        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
-      },
-      "sideEffects": false,
-      "types": "./esm/index.d.ts",
-      "version": "1.0.0-beta.0",
-    },
-  },
-  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demox/demo-demo-4",
 }
 `;
 
@@ -530,5 +354,1056 @@ Object {
     },
   },
   "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo/demo-demo-0",
+}
+`;
+
+exports[`build none name & output .each({"types":["ekuaibao","lint","jest"]}) show be types: ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "types": Array [
+      "common",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen",
+}
+`;
+
+exports[`build none name & output .each({"types":["ts","ekuaibao","lint","jest"]}) show be types: ts,ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen",
+}
+`;
+
+exports[`build none name & output .each({"types":["ts","ekuaibao","lint"]}) show be types: ts,ekuaibao,lint 1`] = `
+Object {
+  "config": Object {
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen",
+}
+`;
+
+exports[`build none name & output .each({"types":["ts","ekuaibao"]}) show be types: ts,ekuaibao 1`] = `
+Object {
+  "config": Object {
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen",
+}
+`;
+
+exports[`build none name & output .each({"types":["ts"]}) show be types: ts 1`] = `
+Object {
+  "config": Object {
+    "types": Array [
+      "common",
+      "ts",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen",
+}
+`;
+
+exports[`build none name .each({"types":["ekuaibao","lint","jest"],"output":"demo_demo-4"}) show be types: ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "output": "demo_demo-4",
+    "types": Array [
+      "common",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo_demo-4",
+}
+`;
+
+exports[`build none name .each({"types":["ts","ekuaibao","lint","jest"],"output":"demo_demo-3"}) show be types: ts,ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "output": "demo_demo-3",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo_demo-3",
+}
+`;
+
+exports[`build none name .each({"types":["ts","ekuaibao","lint"],"output":"demo_demo-2"}) show be types: ts,ekuaibao,lint 1`] = `
+Object {
+  "config": Object {
+    "output": "demo_demo-2",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo_demo-2",
+}
+`;
+
+exports[`build none name .each({"types":["ts","ekuaibao"],"output":"demo_demo-1"}) show be types: ts,ekuaibao 1`] = `
+Object {
+  "config": Object {
+    "output": "demo_demo-1",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo_demo-1",
+}
+`;
+
+exports[`build none name .each({"types":["ts"],"output":"./demo_demo_0"}) show be types: ts 1`] = `
+Object {
+  "config": Object {
+    "output": "./demo_demo_0",
+    "types": Array [
+      "common",
+      "ts",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": undefined,
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo_demo_0",
+}
+`;
+
+exports[`build none output .each({"types":["ekuaibao","lint","jest"],"name":"demo-demo-4"}) show be types: ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "name": "demo-demo-4",
+    "types": Array [
+      "common",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": "demo-demo-4",
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo-demo-4",
+}
+`;
+
+exports[`build none output .each({"types":["ts","ekuaibao","lint","jest"],"name":"demo-demo-3"}) show be types: ts,ekuaibao,lint,jest 1`] = `
+Object {
+  "config": Object {
+    "name": "demo-demo-3",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+      "jest",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "@types/jest": "^23.3.1",
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^23.4.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "codecov": "^3.0.4",
+        "jest": "^23.4.2",
+        "ts-jest": "^23.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "jest": Object {
+        "coveragePathIgnorePatterns": Array [
+          "/node_modules/",
+          "/__tests__/",
+          "/dist/",
+        ],
+        "moduleFileExtensions": Array [
+          "js",
+          "jsx",
+          "ts",
+          "tsx",
+        ],
+        "testEnvironment": "node",
+        "testMatch": Array [
+          "<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}",
+        ],
+        "testPathIgnorePatterns": Array [
+          "/node_modules/",
+          "/fixtures/",
+        ],
+        "transform": Object {
+          "^.+\\\\.jsx?$": "babel-jest",
+          "^.+\\\\.tsx?$": "ts-jest",
+        },
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": "demo-demo-3",
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "codecov": "codecov",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "start": "jest -o --watch",
+        "test": "jest --coverage",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo-demo-3",
+}
+`;
+
+exports[`build none output .each({"types":["ts","ekuaibao","lint"],"name":"demo-demo-2"}) show be types: ts,ekuaibao,lint 1`] = `
+Object {
+  "config": Object {
+    "name": "demo-demo-2",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+      "lint",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/lint/tslint.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": "demo-demo-2",
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo-demo-2",
+}
+`;
+
+exports[`build none output .each({"types":["ts","ekuaibao"],"name":"demo-demo-1"}) show be types: ts,ekuaibao 1`] = `
+Object {
+  "config": Object {
+    "name": "demo-demo-1",
+    "types": Array [
+      "common",
+      "ts",
+      "ekuaibao",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ekuaibao/.gitlab-ci.yml",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": "demo-demo-1",
+      "publishConfig": Object {
+        "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
+      },
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo-demo-1",
+}
+`;
+
+exports[`build none output .each({"types":["ts"],"name":"demo-demo-0"}) show be types: ts 1`] = `
+Object {
+  "config": Object {
+    "name": "demo-demo-0",
+    "types": Array [
+      "common",
+      "ts",
+    ],
+  },
+  "files": Array [
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.gitignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.npmignore",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/.prettierrc",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/common/README.md",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.esm.json",
+    "/Users/nanyuantingfeng/Repositories/github/yygen/templates/ts/tsconfig.json",
+  ],
+  "filesObject": Object {
+    "package.json": Object {
+      "dependencies": Object {
+        "reflect-metadata": "^0.1.12",
+        "tslib": "^1.9.3",
+      },
+      "description": "this is an yygen template paoject!!",
+      "devDependencies": Object {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+        "typescript": "^3.0.1",
+      },
+      "license": "MIT",
+      "main": "./lib/index.js",
+      "module": "./esm/index.js",
+      "name": "demo-demo-0",
+      "scripts": Object {
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+        "build": "npm run tsc:build && npm run optimize",
+        "optimize": "npm run babel:cjs & npm run babel:mjs",
+        "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist",
+        "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+      },
+      "sideEffects": false,
+      "types": "./esm/index.d.ts",
+      "version": "1.0.0-beta.0",
+    },
+  },
+  "output": "/Users/nanyuantingfeng/Repositories/github/yygen/demo-demo-0",
 }
 `;

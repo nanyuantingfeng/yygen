@@ -15,5 +15,6 @@ module.exports = async function(ctx, next) {
   files.push(path.join(__dirname, '.npmignore'))
   files.push(path.join(__dirname, '.prettierrc'))
   files.push(path.join(__dirname, 'README.md'))
+  files.push(path.join(__dirname, 'LICENSE'))
   next()
 }

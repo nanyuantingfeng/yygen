@@ -9,7 +9,7 @@
   "sideEffects": false,
   "scripts": {
     "clear": "rm -rf dist",
-    "build": "npm run clear && mkdir dist && cp -R bin templates LICENSE package.json README.md .npmignore dist",
+    "build": "npm run clear && mkdir dist && cp -R bin scripts templates LICENSE package.json README.md .npmignore dist",
     "publish2npm": "npm run build && npm publish dist"
   },
   "dependencies": {

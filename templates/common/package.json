@@ -13,6 +13,6 @@
     "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist"
   },
   "devDependencies": {
-    "hollow-cli": "^1.1.0-beta.12",
+    "hollow-cli": "^1.1.0-beta.12"
   }
 }

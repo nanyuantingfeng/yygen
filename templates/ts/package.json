@@ -1,4 +1,12 @@
 {
+  "scripts": {
+    "build": "npm run tsc:build && npm run optimize",
+    "tsc:build": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+    "optimize": "npm run babel:cjs & npm run babel:mjs",
+    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+    "babel:mjs": "babel dist/esm --out-dir dist/esm --plugins=lodash",
+    "publish2npm": "npm run build && cp package.json README.md .npmignore dist && npm publish dist"
+  },
   "dependencies": {
     "reflect-metadata": "^0.1.12",
     "tslib": "^1.9.3"

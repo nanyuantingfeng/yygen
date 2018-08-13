@@ -11,6 +11,7 @@ module.exports = async function(ctx, next) {
   pkg['name'] = name
   filesObject['package.json'] = pkg
 
+  files.push(path.join(__dirname, '.babelrc.raw'))
   files.push(path.join(__dirname, '.gitignore.raw'))
   files.push(path.join(__dirname, '.npmignore.raw'))
 

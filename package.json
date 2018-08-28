@@ -8,8 +8,9 @@
   },
   "sideEffects": false,
   "scripts": {
-    "clear": "rm -rf dist",
-    "build": "npm run clear && mkdir dist && cp -R bin scripts templates LICENSE package.json README.md .npmignore dist",
+    "copy": " cp -R bin scripts templates LICENSE package.json README.md .npmignore dist",
+    "clear": "rm -rf dist && rm -rf demo",
+    "build": "npm run clear && mkdir dist",
     "publish2npm": "npm run build && npm publish dist"
   },
   "dependencies": {

@@ -1,7 +1,8 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    "tslint:recommended"
+    "tslint:recommended",
+    "tslint-config-prettier"
   ],
   "rules": {
     "variable-name": false,
@@ -9,6 +10,10 @@
       true,
       "single",
       "jsx-double"
+    ],
+    "semicolon": [
+      true,
+      "never"
     ],
     "arrow-parens": false,
     "ban-types": false,
@@ -29,10 +34,6 @@
     "no-empty": false,
     "no-empty-interface": false,
     "no-string-literal": false,
-    "max-line-length": false,
-    "no-bitwise": false,
-    "interface-over-type-literal": false,
-    "max-classes-per-file": false,
-    "curly": false
+    "interface-over-type-literal": false
   }
 }

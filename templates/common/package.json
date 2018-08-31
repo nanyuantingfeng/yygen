@@ -8,12 +8,13 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm run optimize && npm run copy",
-    "copy" : " cp package.json README.md .npmignore dist",
+    "copy": " cp package.json README.md .npmignore dist",
     "optimize": "npm run babel:cjs",
     "babel:cjs": "babel src --out-dir dist/lib",
     "publish2npm": "npm run build && npm publish dist"
   },
   "devDependencies": {
-    "hollow-cli": "^1.1.0-beta.13"
+    "hollow-cli": "^1.1.0-beta.13",
+    "prettier": "^1.14.2"
   }
 }

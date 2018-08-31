@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "declaration": true,

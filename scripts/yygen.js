@@ -4,6 +4,7 @@
 const path = require('path')
 const fse = require('fs-extra')
 const build = require('./build')
+const merge = require('merge-deep')
 
 module.exports = async function(config) {
   const ctx = await build(config)
@@ -17,6 +18,15 @@ module.exports = async function(config) {
     if (extName === '.raw') fileName = fileName.slice(0, -4)
     fse.copyFileSync(file, path.join(output, fileName))
   })
+
+  const pkgJSON = filesObject['package.json']
+
+  if (config.fix && fse.existsSync(output + '/package.json')) {
+    delete filesObject['package.json']
+    const oldPKGJSON = require(output + '/package.json')
+    const data = merge(oldPKGJSON, pkgJSON)
+    fse.outputJSONSync(output + '/package.json', data, { spaces: 2 })
+  }
 
   const fileNames = Object.keys(filesObject)
 

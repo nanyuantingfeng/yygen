@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var yargs = require('yargs');
+var yargs = require('yargs')
 
 var argv = yargs
   .version(require('../package').version, '-v, --version')
@@ -10,10 +10,12 @@ var argv = yargs
   .describe('n', 'choose your project type what you need')
   .alias('o', 'output')
   .describe('o', 'choose your project path')
+  .alias('f', 'fix')
+  .default('f', false)
+  .describe('f', 'is fix current project')
   .help()
-  .argv;
+  .argv
 
-var yygen = require('../scripts/yygen');
+var yygen = require('../scripts/yygen')
 
-
-yygen(argv);
+yygen(argv)

@@ -1,6 +1,6 @@
 {
   "name": "yygen",
-  "version": "1.0.0-beta.57",
+  "version": "1.0.0-beta.58",
   "description": "Project template creation tools",
   "license": "MIT",
   "bin": {

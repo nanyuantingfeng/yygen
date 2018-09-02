@@ -14,7 +14,7 @@
     "publish2npm": "npm run build && npm publish dist"
   },
   "devDependencies": {
-    "hollow-cli": "^1.1.0-beta.13",
+    "hollow-cli": "^1.2.1",
     "prettier": "^1.14.2"
   }
 }

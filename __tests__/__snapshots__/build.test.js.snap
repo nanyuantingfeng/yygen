@@ -168,7 +168,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "codecov": "codecov",
@@ -236,7 +236,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -294,7 +294,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -347,7 +347,7 @@ Object {
       "module": "./esm/index.js",
       "name": "demo-demo-0",
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -528,7 +528,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "codecov": "codecov",
@@ -594,7 +594,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -650,7 +650,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -701,7 +701,7 @@ Object {
       "module": "./esm/index.js",
       "name": undefined,
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -884,7 +884,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "codecov": "codecov",
@@ -951,7 +951,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -1008,7 +1008,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -1060,7 +1060,7 @@ Object {
       "module": "./esm/index.js",
       "name": undefined,
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -1243,7 +1243,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "codecov": "codecov",
@@ -1310,7 +1310,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -1367,7 +1367,7 @@ Object {
         "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/",
       },
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",
@@ -1419,7 +1419,7 @@ Object {
       "module": "./esm/index.js",
       "name": "demo-demo-0",
       "scripts": Object {
-        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,add-module-exports,transform-es2015-modules-commonjs",
+        "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,transform-es2015-modules-commonjs",
         "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
         "build": "npm run tsc && npm run optimize && npm run copy",
         "copy": "cp package.json README.md .npmignore dist",

@@ -25,6 +25,7 @@ module.exports = async function(config) {
     delete filesObject['package.json']
     const oldPKGJSON = require(output + '/package.json')
     const data = merge(oldPKGJSON, pkgJSON, {
+      name: oldPKGJSON.name,
       version: oldPKGJSON.version,
       description: oldPKGJSON.description
     })

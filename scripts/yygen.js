@@ -24,7 +24,10 @@ module.exports = async function(config) {
   if (config.fix && fse.existsSync(output + '/package.json')) {
     delete filesObject['package.json']
     const oldPKGJSON = require(output + '/package.json')
-    const data = merge(oldPKGJSON, pkgJSON)
+    const data = merge(oldPKGJSON, pkgJSON, {
+      version: oldPKGJSON.version,
+      description: oldPKGJSON.description
+    })
     fse.outputJSONSync(output + '/package.json', data, { spaces: 2 })
   }
 

@@ -1,20 +1,10 @@
 {
   "defaultSeverity": "error",
-  "extends": [
-    "tslint:recommended",
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
     "variable-name": false,
-    "quotemark": [
-      true,
-      "single",
-      "jsx-double"
-    ],
-    "semicolon": [
-      true,
-      "never"
-    ],
+    "quotemark": [true, "single", "jsx-double"],
+    "semicolon": [true, "never"],
     "arrow-parens": false,
     "ban-types": false,
     "no-console": false,

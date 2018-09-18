@@ -1,10 +1,10 @@
 {
   "scripts": {
     "build": "npm run tsc && npm run optimize && npm run copy",
-    "copy": "cp package.json README.md .npmignore dist",
     "tsc": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
+    "copy": "cp package.json README.md .npmignore dist",
     "optimize": "npm run babel:cjs & npm run babel:mjs",
-    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash",
+    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,@babel/plugin-transform-modules-commonjs",
     "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
     "publish2npm": "npm run build && npm publish dist"
   },

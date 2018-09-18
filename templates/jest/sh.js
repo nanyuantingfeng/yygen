@@ -9,6 +9,5 @@ module.exports = async function(ctx, next) {
   const { filesObject } = ctx
   const pkg = require('./package.json')
   filesObject['package.json'] = mergedeep(filesObject['package.json'], pkg)
-
   next()
 }

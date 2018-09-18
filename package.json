@@ -1,6 +1,6 @@
 {
   "name": "yygen",
-  "version": "1.0.0-beta.63",
+  "version": "1.0.0-beta.66",
   "description": "Project template creation tools",
   "license": "MIT",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "copy": " cp -R bin scripts templates LICENSE package.json README.md .npmignore dist",
+    "copy": "cp -R bin scripts templates LICENSE package.json README.md .npmignore dist",
     "clear": "rm -rf dist && rm -rf demo",
     "build": "npm run clear && mkdir dist && npm run copy",
     "publish2npm": "npm run build && npm publish dist"

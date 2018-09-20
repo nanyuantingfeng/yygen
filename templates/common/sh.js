@@ -1,11 +1,10 @@
 /**************************************************
  * Created by nanyuantingfeng on 2018/8/10 10:59.
  **************************************************/
-const fse = require('fs-extra')
 const path = require('path')
 
 module.exports = async function(ctx, next) {
-  const { name, output, type } = ctx.config
+  const { name } = ctx.config
   const { filesObject, files } = ctx
   const pkg = require('./package.json')
   pkg['name'] = name

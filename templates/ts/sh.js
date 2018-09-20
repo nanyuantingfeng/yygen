@@ -1,7 +1,6 @@
 /**************************************************
  * Created by nanyuantingfeng on 2018/8/10 10:59.
  **************************************************/
-const fse = require('fs-extra')
 const path = require('path')
 const mergedeep = require('merge-deep')
 

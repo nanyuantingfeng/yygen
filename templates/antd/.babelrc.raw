@@ -13,7 +13,10 @@
       "presets": ["@babel/preset-env", "@babel/preset-react"]
     },
     "lib": {
-      "plugins": [["babel-plugin-import", { "libraryName": "antd", "style": false, "libraryDirectory": "lib" }]]
+      "plugins": [
+        ["babel-plugin-import", { "libraryName": "antd", "style": false, "libraryDirectory": "lib" }],
+        "@babel/plugin-transform-modules-commonjs"
+      ]
     },
     "esm": {
       "plugins": [["babel-plugin-import", { "libraryName": "antd", "style": false, "libraryDirectory": "es" }]]

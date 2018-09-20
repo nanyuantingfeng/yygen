@@ -3,9 +3,9 @@
     "build": "npm run tsc && npm run optimize && npm run copy",
     "tsc": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
     "copy": "cp package.json README.md .npmignore dist",
-    "optimize": "npm run babel:cjs & npm run babel:mjs",
-    "babel:cjs": "babel dist/lib --out-dir dist/lib --plugins=lodash,@babel/plugin-transform-modules-commonjs",
-    "babel:mjs": "babel dist/esm --out-dir dist/esm --no-babelrc --plugins=lodash",
+    "optimize": "npm run babel:lib & npm run babel:esm",
+    "babel:lib": "BABEL_ENV=lib babel dist/lib --out-dir dist/lib",
+    "babel:esm": "BABEL_ENV=esm babel dist/esm --out-dir dist/esm",
     "publish2npm": "npm run build && npm publish dist"
   },
   "dependencies": {

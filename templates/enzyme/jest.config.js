@@ -1,5 +1,6 @@
 module.exports = {
-  testEnvironment: 'node',
+  testEnvironment: 'enzyme',
+  setupTestFrameworkScriptFile: 'jest-enzyme',
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   testMatch: ['<rootDir>/src/**/__tests__/**/*.test.{ts,tsx,js,jsx}'],
   testPathIgnorePatterns: ['/node_modules/', '/fixtures/'],

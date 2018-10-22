@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "hollow-cli": "^1",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.3"
   }
 }

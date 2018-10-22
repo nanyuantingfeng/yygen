@@ -22,6 +22,7 @@ module.exports = async function(config) {
   }
 
   const { types, name, output } = config
+
   const cwd = process.cwd()
 
   const pOut = output ? path.join(cwd, output, name || '.') : path.join(cwd, name || '.')

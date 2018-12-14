@@ -1,6 +1,6 @@
 {
   "name": "yygen",
-  "version": "1.0.0-beta.80",
+  "version": "1.0.0-beta.90",
   "description": "Project template creation tools",
   "license": "MIT",
   "bin": {
@@ -14,20 +14,20 @@
     "publish2npm": "npm run build && npm publish dist"
   },
   "dependencies": {
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^7.0.1",
     "koa-compose": "^4.1.0",
     "merge-deep": "^3.0.2",
-    "yargs": "^12.0.2"
+    "yargs": "^12.0.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
     "@types/yargs": "^12.0.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.7.0",
-    "eslint-config-prettier": "^3.1.0",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "jest": "^23.6.0",
-    "prettier": "^1.14.3"
+    "prettier": "^1.15.3"
   },
   "main": "index.js",
   "repository": {

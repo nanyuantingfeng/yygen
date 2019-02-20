@@ -9,5 +9,6 @@ module.exports = async function(ctx, next) {
   const pkg = require('./package.json')
   filesObject['package.json'] = mergedeep(filesObject['package.json'], pkg)
   files.push(path.join(__dirname, 'jest.config.js'))
+  files.push(path.join(__dirname, 'jest.setup.js'))
   next()
 }

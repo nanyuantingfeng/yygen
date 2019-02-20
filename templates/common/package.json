@@ -14,8 +14,11 @@
     "babel:esm": "BABEL_ENV=esm babel src --out-dir dist/esm",
     "publish2npm": "npm run build && npm publish dist"
   },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
   "devDependencies": {
     "hollow-cli": "^1",
-    "prettier": "^1.15.3"
+    "prettier": "^1"
   }
 }

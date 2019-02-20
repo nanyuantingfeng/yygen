@@ -1,11 +1,11 @@
 {
   "devDependencies": {
-    "eslint": "^5.7.0",
-    "tslint": "^5.11.0",
-    "babel-eslint": "^10.0.1",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "tslint-config-prettier": "^1.15.0"
+    "eslint": "^5.14",
+    "tslint": "^5.12",
+    "babel-eslint": "^10.0",
+    "eslint-config-prettier": "^4.0",
+    "eslint-plugin-prettier": "^3.0",
+    "tslint-config-prettier": "^1.18"
   },
   "scripts": {
     "lint:es": "eslint --ext .jsx,.js src",

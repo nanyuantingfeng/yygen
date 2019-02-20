@@ -1,7 +1,8 @@
 {
   "devDependencies": {
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "jest-enzyme": "^7.0.0"
+    "enzyme": "^3.9",
+    "enzyme-adapter-react-16": "^1.9",
+    "@types/enzyme": "^3",
+    "@types/enzyme-adapter-react-16": "^1"
   }
 }

@@ -4,9 +4,9 @@
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.5",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.4",
-    "babel-jest": "^23.6.0"
+    "@types/jest": "^24",
+    "jest": "^24",
+    "ts-jest": "^24",
+    "babel-jest": "^24"
   }
 }

@@ -9,8 +9,8 @@
     "publish2npm": "npm run build && npm publish dist"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.12",
-    "tslib": "^1.9.3"
+    "reflect-metadata": "^0",
+    "tslib": "^1"
   },
   "devDependencies": {
     "typescript": "^3"

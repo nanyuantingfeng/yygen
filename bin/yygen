@@ -5,16 +5,20 @@ var yargs = require('yargs')
 var argv = yargs
   .version(require('../package').version, '-v, --version')
   .alias('t', 'types')
+  .describe('t', '[ekuaibao,antd,enzyme,jest,lint,react,ts]')
   .default('t', 'common')
+
   .alias('n', 'name')
   .describe('n', 'choose your project type what you need')
+
   .alias('o', 'output')
   .describe('o', 'choose your project path')
+
   .alias('f', 'fix')
   .default('f', false)
   .describe('f', 'is fix current project')
-  .help()
-  .argv
+
+  .help().argv
 
 var yygen = require('../scripts/yygen')
 

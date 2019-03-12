@@ -3,10 +3,13 @@
     "test:watch": "jest -o --watch",
     "test": "jest --coverage"
   },
+  "engines": {
+    "node": ">=10 <11.11"
+  },
   "devDependencies": {
-    "@types/jest": "^24",
-    "jest": "^24",
-    "ts-jest": "^24",
-    "babel-jest": "^24"
+    "@types/jest": "^23",
+    "jest": "^23",
+    "ts-jest": "^23.1",
+    "babel-jest": "^23"
   }
 }

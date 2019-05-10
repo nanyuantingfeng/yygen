@@ -10,6 +10,7 @@ module.exports = async function(ctx, next) {
   filesObject['package.json'] = mergedeep(filesObject['package.json'], pkg)
 
   files.push(path.join(__dirname, '.eslintrc'))
+  files.push(path.join(__dirname, '.eslintignore'))
   files.push(path.join(__dirname, 'tslint.json'))
   next()
 }

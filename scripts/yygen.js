@@ -30,10 +30,6 @@ module.exports = async function(config) {
       description: oldPKGJSON.description
     })
 
-    if (!data.name) {
-      data.name = path.dirname(path.resolve('.'))
-    }
-
     fse.outputJSONSync(output + '/package.json', data, { spaces: 2 })
   }
 

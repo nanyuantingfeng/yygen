@@ -9,6 +9,7 @@ module.exports = async function(ctx, next) {
   const pkg = require('./package.json')
   filesObject['package.json'] = mergedeep(filesObject['package.json'], pkg)
 
+  files.push(path.join(__dirname, '.babelrc.raw'))
   files.push(path.join(__dirname, 'tsconfig.esm.json'))
   files.push(path.join(__dirname, 'tsconfig.json'))
   files.push(path.join(__dirname, 'tsconfig.types.json'))

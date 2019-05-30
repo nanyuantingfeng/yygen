@@ -14,30 +14,9 @@
       "presets": ["@babel/preset-env"]
     },
     "lib": {
-      "plugins": [
-        [
-          "babel-plugin-import",
-          {
-            "libraryName": "antd",
-            "style": false,
-            "libraryDirectory": "lib"
-          }
-        ],
-        "@babel/plugin-transform-modules-commonjs"
-      ]
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
     },
-    "esm": {
-      "plugins": [
-        [
-          "babel-plugin-import",
-          {
-            "libraryName": "antd",
-            "style": false,
-            "libraryDirectory": "es"
-          }
-        ]
-      ]
-    }
+    "esm": {}
   },
   "plugins": [
     "@babel/plugin-external-helpers",

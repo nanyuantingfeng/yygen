@@ -4,21 +4,23 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./esm/index.js",
-  "types": "./esm/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run optimize && npm run copy",
-    "optimize": "npm run babel:lib && npm run babel:esm",
+    "build": "rm -rf dist && npm run optimize && npm run copy",
+    "optimize": "npm run build:lib && npm run build:esm",
     "copy": "cp package.json README.md .npmignore dist",
-    "babel:lib": "BABEL_ENV=lib babel src --out-dir dist/lib",
-    "babel:esm": "BABEL_ENV=esm babel src --out-dir dist/esm",
+    "build:lib": "BABEL_ENV=lib babel src --out-dir dist/lib",
+    "build:esm": "BABEL_ENV=esm babel src --out-dir dist/esm",
     "publish2npm": "npm run build && npm publish dist"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "^7"
   },
   "resolutions": {
     "babel-core": "^7.0.0-bridge.0"
   },
   "devDependencies": {
-    "hollow-cli": "^1",
+    "hollow-cli": "^2.1.12",
     "prettier": "^1"
   }
 }

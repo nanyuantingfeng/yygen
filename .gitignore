@@ -5,5 +5,4 @@ node_modules/
 coverage/
 dist/
 demo/
-
-demo-*/
+build/

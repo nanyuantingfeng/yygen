@@ -41,5 +41,5 @@
       "es2015.iterable"
     ]
   },
-  "exclude": ["./example", "./demo"]
+  "include": ["src"]
 }

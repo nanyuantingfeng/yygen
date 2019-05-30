@@ -1,12 +1,13 @@
 {
+  "types": "./types/index.d.ts",
   "scripts": {
-    "build": "npm run tsc && npm run optimize && npm run copy",
-    "tsc": "rm -rf dist && tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
-    "copy": "cp package.json README.md .npmignore dist",
-    "optimize": "npm run babel:lib & npm run babel:esm",
-    "babel:lib": "BABEL_ENV=lib babel dist/lib --out-dir dist/lib",
-    "babel:esm": "BABEL_ENV=esm babel dist/esm --out-dir dist/esm",
-    "publish2npm": "npm run build && npm publish dist"
+    "optimize": "npm run build:lib & npm run build:esm & npm run build:types",
+    "build:lib": "BABEL_ENV=lib babel src --out-dir dist/lib --extensions \".tsx,.ts,.jsx,.js\"",
+    "build:esm": "BABEL_ENV=esm babel src --out-dir dist/esm --extensions \".tsx,.ts,.jsx,.js\"",
+    "build:types": "tsc --emitDeclarationOnly -p tsconfig.types.json"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "^7"
   },
   "dependencies": {
     "reflect-metadata": "^0",

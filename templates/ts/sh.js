@@ -11,5 +11,6 @@ module.exports = async function(ctx, next) {
 
   files.push(path.join(__dirname, 'tsconfig.esm.json'))
   files.push(path.join(__dirname, 'tsconfig.json'))
+  files.push(path.join(__dirname, 'tsconfig.types.json'))
   next()
 }

@@ -27,7 +27,7 @@ Object {
   ],
   "filesObject": Object {
     "package.json": Object {
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -113,7 +113,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -200,7 +200,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "babel-eslint": "^10.0",
         "eslint": "^5.14",
@@ -274,7 +274,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -338,7 +338,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -397,7 +397,7 @@ Object {
   ],
   "filesObject": Object {
     "package.json": Object {
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -481,7 +481,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -566,7 +566,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "babel-eslint": "^10.0",
         "eslint": "^5.14",
@@ -638,7 +638,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -700,7 +700,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -760,7 +760,7 @@ Object {
   ],
   "filesObject": Object {
     "package.json": Object {
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -845,7 +845,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -931,7 +931,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "babel-eslint": "^10.0",
         "eslint": "^5.14",
@@ -1004,7 +1004,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -1067,7 +1067,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -1127,7 +1127,7 @@ Object {
   ],
   "filesObject": Object {
     "package.json": Object {
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -1212,7 +1212,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "@types/jest": "^23",
         "babel-eslint": "^10.0",
@@ -1298,7 +1298,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "babel-eslint": "^10.0",
         "eslint": "^5.14",
@@ -1371,7 +1371,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",
@@ -1434,7 +1434,7 @@ Object {
         "reflect-metadata": "^0",
         "tslib": "^1",
       },
-      "description": "this is an yygen template paoject!!",
+      "description": "this is an yygen template project!!",
       "devDependencies": Object {
         "hollow-cli": "^2.1.12",
         "prettier": "^1",

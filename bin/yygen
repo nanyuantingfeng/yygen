@@ -14,10 +14,6 @@ var argv = yargs
   .alias('o', 'output')
   .describe('o', 'choose your project path')
 
-  .alias('f', 'fix')
-  .default('f', false)
-  .describe('f', 'is fix current project')
-
   .help().argv
 
 var yygen = require('../scripts/yygen')

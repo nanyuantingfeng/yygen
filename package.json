@@ -1,6 +1,6 @@
 {
   "name": "yygen",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Project template creation tools",
   "license": "MIT",
   "bin": {
@@ -12,6 +12,9 @@
     "clear": "rm -rf dist && rm -rf demo",
     "build": "npm run clear && mkdir dist && npm run copy",
     "publish2npm": "npm run build && npm publish dist"
+  },
+  "resolutions": {
+    "fsevents": ""
   },
   "dependencies": {
     "fs-extra": "^7.0.1",

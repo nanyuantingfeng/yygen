@@ -1,9 +1,10 @@
 {
   "types": "./types/index.d.ts",
   "scripts": {
-    "optimize": "npm run build:lib & npm run build:esm & npm run build:types",
-    "build:lib": "BABEL_ENV=lib babel src --out-dir dist/lib --extensions \".tsx,.ts,.jsx,.js\"",
-    "build:esm": "BABEL_ENV=esm babel src --out-dir dist/esm --extensions \".tsx,.ts,.jsx,.js\"",
+    "optimize": "npm run build:src && npm run build:lib && npm run build:esm && npm run build:types",
+    "build:lib": "BABEL_ENV=lib babel dist/lib --out-dir dist/lib",
+    "build:esm": "BABEL_ENV=esm babel dist/esm --out-dir dist/esm",
+    "build:src": "tsc -p tsconfig.esm.json && cp -R dist/esm dist/lib",
     "build:types": "tsc --emitDeclarationOnly -p tsconfig.types.json"
   },
   "peerDependencies": {

@@ -17,10 +17,11 @@
     "@babel/runtime": "^7"
   },
   "resolutions": {
-    "babel-core": "^7.0.0-bridge.0"
+    "babel-core": "^7.0.0-bridge.0",
+    "fsevents": ""
   },
   "devDependencies": {
-    "hollow-cli": "^2.1.12",
+    "hollow-cli": "^2",
     "prettier": "^1"
   }
 }

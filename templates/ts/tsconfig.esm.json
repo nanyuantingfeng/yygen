@@ -1,7 +1,9 @@
 {
   "extends": "./tsconfig",
   "compilerOptions": {
+    "declaration": false,
     "module": "esnext",
     "outDir": "dist/esm"
-  }
+  },
+  "exclude": ["**/__tests__/**", "**/test/**"]
 }

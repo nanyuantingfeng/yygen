@@ -4,9 +4,9 @@ stages:
 
 build:
   stage: build
-  image: docker.ekuaibao.com/ci-nodejs:8
+  image: registry.ekuaibao.com/ci/ci-nodejs:10.0
   script:
-    - npm --registry http://repo.ekuaibao.com/repository/npm-group/ install
+    - npm --registry https://repo.ekuaibao.com/repository/npm-group/ install
     - npm run build
     - npm run publish2npm
   only:

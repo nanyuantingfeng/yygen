@@ -6,7 +6,7 @@ build:
   stage: build
   image: registry.ekuaibao.com/ci/ci-nodejs:10.0
   script:
-    - npm --registry https://repo.ekuaibao.com/repository/npm-group/ install
+    - npm install
     - npm run build
     - npm run publish2npm
   only:

@@ -1,5 +1,5 @@
 {
   "publishConfig": {
-    "registry": "https://repo.ekuaibao.com/repository/ekuaibao-npm/"
+    "registry": "https://npm.ekuaibao.com/"
   }
 }
